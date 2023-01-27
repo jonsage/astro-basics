@@ -3,9 +3,15 @@ layout: '@layouts/Reference.astro'
 title: Test
 ---
 
-import Card from '../components/Card.astro';
+import Card from '@components/Card.astro';
+import AstroGreet from '@components/AstroGreet.astro';
 
 # Test
+
+<AstroGreet />
+
+<AstroGreet message="Lovely day to build components!" />
+<AstroGreet message="Glad you made it! 👋" />
 
 <Card
   href="https://docs.astro.build/"
